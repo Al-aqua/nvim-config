@@ -1,4 +1,4 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- AstroCore provides a central place to modify mappings, vim options, autocommands, and more!
 -- Configuration documentation can be found with `:h astrocore`
@@ -45,6 +45,20 @@ return {
         spell = false, -- sets vim.opt.spell
         signcolumn = "yes", -- sets vim.opt.signcolumn to yes
         wrap = false, -- sets vim.opt.wrap
+
+        swapfile = false,
+        backup = false,
+        undodir = os.getenv "HOME" .. "/.vim/undodir",
+        undofile = true,
+
+        hlsearch = false,
+        incsearch = true,
+
+        scrolloff = 8,
+
+        updatetime = 50,
+
+        colorcolumn = "80",
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)
@@ -79,6 +93,16 @@ return {
 
         -- setting a mapping to false will disable it
         -- ["<C-S>"] = false,
+        ["<leader>X"] = { "<cmd> !chmod +x %<CR>", desc = "Make file executable" },
+        ["<leader>Fl"] = { "<cmd> :Telescope flutter commands<CR>", desc = "Flutter commands" },
+      },
+      v = {
+        ["J"] = { ":m '>+1<CR>gv=gv", desc = "Move line down" },
+        ["K"] = { ":m '<-2<CR>gv=gv", desc = "Move line up" },
+        ["<Leader>d"] = { '"_d', desc = "Delete without yanking" },
+      },
+      x = {
+        ["<leader>p"] = { '"_dP', desc = "Paste without yanking" },
       },
     },
   },

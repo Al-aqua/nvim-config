@@ -94,7 +94,6 @@ return {
         -- setting a mapping to false will disable it
         -- ["<C-S>"] = false,
         ["<leader>X"] = { "<cmd> !chmod +x %<CR>", desc = "Make file executable" },
-        ["<leader>Fl"] = { "<cmd> :Telescope flutter commands<CR>", desc = "Flutter commands" },
       },
       v = {
         ["J"] = { ":m '>+1<CR>gv=gv", desc = "Move line down" },

@@ -47,4 +47,5 @@ return {
   { import = "astrocommunity.editing-support.yanky-nvim" },
   { import = "astrocommunity.scrolling.mini-animate" },
   -- import/override with your plugins folder
+  { import = "astrocommunity.markdown-and-latex.vimtex" },
 }

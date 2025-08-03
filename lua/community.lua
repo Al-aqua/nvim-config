@@ -28,6 +28,7 @@ return {
   { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
   { import = "astrocommunity.pack.hyprlang" },
+  { import = "astrocommunity.pack.rust" },
   -- colorscheme
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.colorscheme.eldritch-nvim" },

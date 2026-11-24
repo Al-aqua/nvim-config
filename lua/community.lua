@@ -9,6 +9,7 @@ return {
   "AstroNvim/astrocommunity",
   -- packs
   { import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.pack.go" },
   { import = "astrocommunity.pack.svelte" },
   { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.bash" },
@@ -18,6 +19,9 @@ return {
   { import = "astrocommunity.pack.tailwindcss" },
   { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.pack.yaml" },
+  { import = "astrocommunity.pack.markdown" },
+  { import = "astrocommunity.markdown-and-latex.markview-nvim" },
+  { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
   -- editing-support
   { import = "astrocommunity.editing-support.undotree" },
   { import = "astrocommunity.editing-support.yanky-nvim" },
